@@ -1,10 +1,20 @@
+import Header from "./components/Header"
+import Nav from "./components/Nav"
+import Main from "./components/Main"
+import Footer from "./components/Footer"
 import './App.css';
+// import { ChakraProvider } from "@chakra-ui/react"
+
+import logo from "./images/logo.png"
 
 function App() {
   return (
-    <div>
-
-    </div>
+    <>
+      <Header logoSrc={logo} />
+      <Nav />
+      <Main />
+      <Footer />
+    </>
   );
 }
 
