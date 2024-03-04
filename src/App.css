@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+.title {
+    font-family: 'Markazi Text';
+    font-weight: 550;
+    font-size: 64px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sub_title {
+    font-family: 'Markazi Text';
+    font-weight: 400;
+    font-size: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lead_text {
+    font-family: 'Karla';
+    font-weight: 500;
+    font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.section_title {
+    font-family: 'Karla';
+    font-weight: 800;
+    font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.highlight_text {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.paragraph_text {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.card_title {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    border-radius: 16px;
+    background-color: #F4CE14;
 }

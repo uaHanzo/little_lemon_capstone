@@ -1,0 +1,28 @@
+.main {
+    height: 400px;
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+main {
+    background-color: #495E57;
+    margin-bottom: 70px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main img {
+    height: 415px;
+    width: 350px;
+    float: right;
+    border-radius: 16px;
+    align-self: center;
+    margin-top: 15px;
+}
+
+main .title {
+    color: #F4CE14;
+}

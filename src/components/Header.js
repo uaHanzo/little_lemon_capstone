@@ -1,9 +1,12 @@
-import React from "react"
+import Navigation from "./Navigation"
+import Logo from "./Logo"
+import './Header.css';
 
-const Header = ({ logoSrc }) => {
+function Header({ logo_src }) {
     return (
         <header>
-            <img src={logoSrc} alt="logo" height="100px" />
+            <Logo logo_src={logo_src} />
+            <Navigation />
         </header>
     )
 }
