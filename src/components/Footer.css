@@ -6,8 +6,25 @@
 }
 
 .footer_main {
-    height: 400px;
+    height: 350px;
     width: 860px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+}
+
+.footer_main>* {
+    margin-right: auto;
+}
+
+.footer_main a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+}
+
+.footer_navigation,
+.footer_contacts,
+.footer_socials {
+    margin-top: 30px;
 }

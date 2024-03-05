@@ -1,12 +1,12 @@
 function Navigation() {
     return (
-        <nav>
-            <a className="section_title" href="/">Home</a>
-            <a className="section_title" href="/#about">About</a>
-            <a className="section_title" href="/#menu">Menu</a>
-            <a className="section_title" href="/#reservation">Reservation</a>
-            <a className="section_title" href="/#order_online">Order online</a>
-            <a className="section_title" href="/#login">Login</a>
+        <nav className="section_title">
+            <a href="/">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#menu">Menu</a>
+            <a href="/#reservation">Reservation</a>
+            <a href="/#order_online">Order online</a>
+            <a href="/#login">Login</a>
         </nav>
     )
 }

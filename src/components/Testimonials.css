@@ -15,7 +15,8 @@
 .testimonials .title {
     color: #F4CE14;
     text-align: center;
-    margin-top: 0;
+    padding-top: 20px;
+    margin-bottom: 50px;
 }
 
 .review {
@@ -29,8 +30,57 @@
     height: 390px;
     width: 200px;
     border-radius: 16px;
-    margin-right: 8px;
-    margin-left: 8px;
     background-color: #EDEFEE;
     position: relative;
+}
+
+.review_1 {
+    margin-right: auto;
+}
+
+.review_2,
+.review_3 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review_4 {
+    margin-left: auto;
+}
+
+.star {
+    height: 30px;
+    width: 30px;
+}
+
+.stars {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.photo_1,
+.photo_2,
+.photo_3,
+.photo_4 {
+    margin-top: 10px;
+    margin-left: 25px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+    border-radius: 50px;
+}
+
+.photo {
+    display: flex;
+}
+
+.reviewer_name {
+    margin-left: 20px;
+    align-self: center;
+}
+
+.review_text {
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
 }

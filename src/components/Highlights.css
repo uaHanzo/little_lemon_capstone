@@ -16,6 +16,11 @@
     align-self: center;
 }
 
+.btn_om {
+    align-self: center;
+    margin-left: auto;
+}
+
 .high_cards {
     display: flex;
 }
@@ -36,21 +41,27 @@
     height: 550px;
     width: 270px;
     border-radius: 16px;
-    margin-right: 8px;
-    margin-left: 8px;
     background-color: #EDEFEE;
     position: relative;
+}
+
+.card_3 {
+    margin-left: auto;
+}
+
+.card_2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card_1 {
+    margin-right: auto;
 }
 
 .card {
     height: 200px;
     width: 269px;
     border-radius: 16px;
-}
-
-.btn_om {
-    align-self: center;
-    margin-left: auto;
 }
 
 .icon {
