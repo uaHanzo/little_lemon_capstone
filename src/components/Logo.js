@@ -1,6 +1,8 @@
-function Logo({ logo_src }) {
+import logo from "../images/logo.png"
+
+function Logo() {
     return (
-        <img src={logo_src} alt="logo" />
+        <img src={logo} alt="logo" />
     )
 }
 

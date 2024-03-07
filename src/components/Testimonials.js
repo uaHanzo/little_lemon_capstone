@@ -1,7 +1,12 @@
+import photo_1 from "../images/photo_1.png"
+import photo_2 from "../images/photo_2.png"
+import photo_3 from "../images/photo_3.png"
+import photo_4 from "../images/photo_4.png"
+import star_icon from "../images/star.png"
 import "./Testimonials.css"
 
-function Testimonials({ photo }) {
-    const star = <img src={photo.star} alt="star" className="star" />
+function Testimonials() {
+    const star = <img src={star_icon} alt="star" className="star" />
     return (
         <section className="testimonials">
             <div className="testimonials_main">
@@ -10,7 +15,7 @@ function Testimonials({ photo }) {
                     <div className="review_1">
                         <div className="stars">{star}{star}{star}{star}</div>
                         <div className="photo">
-                            <img src={photo.photo_1} alt="photo_1" className="photo_1" />
+                            <img src={photo_1} alt="photo_1" className="photo_1" />
                             <div className="reviewer_name lead_text">Olivia</div>
                         </div>
                         <div className="review_text paragraph_text">
@@ -20,7 +25,7 @@ function Testimonials({ photo }) {
                     <div className="review_2">
                         <div className="stars">{star}{star}{star}{star}{star}</div>
                         <div className="photo">
-                            <img src={photo.photo_2} alt="photo_2" className="photo_2" />
+                            <img src={photo_2} alt="photo_2" className="photo_2" />
                             <div className="reviewer_name lead_text">Emma</div>
                         </div>
                         <div className="review_text paragraph_text">
@@ -30,7 +35,7 @@ function Testimonials({ photo }) {
                     <div className="review_3">
                         <div className="stars">{star}{star}{star}{star}{star}</div>
                         <div className="photo">
-                            <img src={photo.photo_3} alt="photo_3" className="photo_3" />
+                            <img src={photo_3} alt="photo_3" className="photo_3" />
                             <div className="reviewer_name lead_text">Liam</div>
                         </div>
                         <div className="review_text paragraph_text">
@@ -40,7 +45,7 @@ function Testimonials({ photo }) {
                     <div className="review_4">
                         <div className="stars">{star}{star}{star}{star}{star}</div>
                         <div className="photo">
-                            <img src={photo.photo_4} alt="photo_4" className="photo_4" />
+                            <img src={photo_4} alt="photo_4" className="photo_4" />
                             <div className="reviewer_name lead_text">Robert</div>
                         </div>
                         <div className="review_text paragraph_text">

@@ -1,10 +1,11 @@
+import about_photo_1 from "../images/about_photo_1.jpg"
+import about_photo_2 from "../images/about_photo_2.jpg"
 import "./About.css"
 
-function About({ about_photo }) {
+function About() {
     return (
         <section className="about">
-
-            <div>
+            <div className="about_card">
                 <h1 className="title">
                     Little Lemon
                 </h1>
@@ -15,12 +16,12 @@ function About({ about_photo }) {
                     Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. To craft the menu, Mario relies on family recipes and his experience as a chef in Italy.
                 </h3>
             </div>
-            <div className="image-stack">
+            <div className="image_stack">
                 <div className="top_image">
-                    <img src={about_photo.about_photo_1} alt="about_photo_1" className="about_photo_1" />
+                    <img src={about_photo_1} alt="about_photo_1" className="about_photo_1" />
                 </div>
                 <div className="bottom_image">
-                    <img src={about_photo.about_photo_2} alt="about_photo_2" className="about_photo_2" />
+                    <img src={about_photo_2} alt="about_photo_2" className="about_photo_2" />
                 </div>
             </div>
         </section>

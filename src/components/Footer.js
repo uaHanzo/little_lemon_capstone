@@ -1,6 +1,7 @@
+import footer_logo from "../images/footer_logo.png"
 import "./Footer.css"
 
-function Footer({ footer_logo }) {
+function Footer({ reserve_page }) {
     return (
         <footer className="footer">
             <div className="footer_main">
@@ -13,7 +14,7 @@ function Footer({ footer_logo }) {
                         <a href="/">Home</a>
                         <a href="/#about">About</a>
                         <a href="/#menu">Menu</a>
-                        <a href="/#reservation">Reservation</a>
+                        <a href="/#reservation" onClick={reserve_page}>Reservation</a>
                         <a href="/#order">Order Online</a>
                         <a href="/#login">Login</a>
                     </div>

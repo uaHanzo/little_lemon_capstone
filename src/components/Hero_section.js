@@ -1,6 +1,7 @@
+import main_photo from "../images/main_photo.jpg"
 import "./Hero_section.css"
 
-function Hero_section({ main_photo_src }) {
+function Hero_section({ reserve_page }) {
     return (
         <main>
             <div className="main">
@@ -14,10 +15,10 @@ function Hero_section({ main_photo_src }) {
                     <h3 className="lead_text">
                         We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
                     </h3>
-                    <button className="button lead_text">Reserve a Table</button>
+                    <button className="button lead_text" onClick={reserve_page}>Reserve a Table</button>
                 </div>
                 <div>
-                    <img src={main_photo_src} alt="main_photo" />
+                    <img src={main_photo} alt="main_photo" />
                 </div>
             </div>
         </main>

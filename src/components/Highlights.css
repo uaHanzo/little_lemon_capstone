@@ -1,8 +1,8 @@
 .high {
-    height: 700px;
     width: 860px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
 
 .high_title {
@@ -38,7 +38,7 @@
 .card_1,
 .card_2,
 .card_3 {
-    height: 550px;
+    height: 450px;
     width: 270px;
     border-radius: 16px;
     background-color: #EDEFEE;
@@ -58,10 +58,12 @@
     margin-right: auto;
 }
 
-.card {
+.card_img {
     height: 200px;
-    width: 269px;
+    width: 270px;
+    border: 1px solid;
     border-radius: 16px;
+    margin-bottom: 15px;
 }
 
 .icon {

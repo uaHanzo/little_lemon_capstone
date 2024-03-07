@@ -6,6 +6,10 @@
     display: flex;
 }
 
+.about_card {
+    margin-top: 50px;
+}
+
 .about .title,
 .about .sub_title {
     color: #495E57;
@@ -22,16 +26,7 @@
     border-radius: 16px;
 }
 
-.about_photo_1 {
-    margin-top: 15px;
-}
-
-.about_photo_2 {}
-
-
-
-
-.image-stack {
+.image_stack {
     display: grid;
     position: relative;
     grid-template-columns: repeat(12, 1fr);
@@ -39,6 +34,7 @@
 }
 
 .top_image {
+    margin-top: 15px;
     grid-column: 4 / -1;
     grid-row: 1;
     z-index: 1;
