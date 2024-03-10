@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import footer_logo from "../images/footer_logo.png"
 import "./Footer.css"
 
-function Footer({ reserve_page }) {
+function Footer() {
     return (
         <footer className="footer">
             <div className="footer_main">
@@ -11,10 +12,10 @@ function Footer({ reserve_page }) {
                 <div className="footer_navigation">
                     <h2 className="section_title">Site Navigation</h2>
                     <div className="paragraph_text">
-                        <a href="/">Home</a>
+                        <Link to="/">Home</Link>
                         <a href="/#about">About</a>
                         <a href="/#menu">Menu</a>
-                        <a href="/#reservation" onClick={reserve_page}>Reservation</a>
+                        <Link to="/reserve">Reservation</Link>
                         <a href="/#order">Order Online</a>
                         <a href="/#login">Login</a>
                     </div>

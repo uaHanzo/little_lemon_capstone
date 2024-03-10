@@ -2,11 +2,11 @@ import Navigation from "./Navigation"
 import Logo from "./Logo"
 import './Header.css';
 
-function Header({ reserve_page }) {
+function Header() {
     return (
         <header>
             <Logo />
-            <Navigation reserve_page={reserve_page} />
+            <Navigation />
         </header>
     )
 }

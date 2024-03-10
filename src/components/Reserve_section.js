@@ -1,18 +1,15 @@
+import { useNavigate } from 'react-router-dom';
+import { createRoot } from "react-dom/client";
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+
 import reserve_photo_1 from "../images/reserve_photo_1.jpg"
 import reserve_photo_2 from "../images/reserve_photo_2.jpg"
 import "./Reserve_section.css"
 
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-
-import App from "../App";
-import { createRoot } from "react-dom/client";
 
 function Reserve_section() {
-    const home_page = () => {
-        const root = createRoot(document.getElementById("root"));
-        root.render(<App />);
-    }
+    const navigate = useNavigate();
 
     function confirm() {
         const page = createRoot(document.getElementById("reserve_div"));
@@ -23,7 +20,7 @@ function Reserve_section() {
         return (
             <div className="confirm_message">
                 <h1 className="sub_title t_cm">Thank you for booking a table. We are waiting for you in Little Lemon</h1>
-                <button className="button b_cm" onClick={home_page}>Return</button>
+                <button className="button b_cm" onClick={() => { navigate("/") }}>Return</button>
             </div>
         )
     }
@@ -116,7 +113,7 @@ function Reserve_section() {
                         <textarea placeholder="Leave a comment for your table reservation" className="lead_text details_block comment" maxLength="200" />
                     </div>
                     <div className="buttons">
-                        <button className="button lead_text b1" onClick={home_page}>Back</button>
+                        <button className="button lead_text b1" onClick={() => { navigate("/") }}>Back</button>
                         <button className="button lead_text b2" onClick={confirm}>Reserve</button>
                     </div>
                 </div>
