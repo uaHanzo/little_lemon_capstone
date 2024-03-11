@@ -5,11 +5,11 @@ import Testimonials from "../components/Testimonials"
 import About from "../components/About"
 import Footer from "../components/Footer"
 
-function Home_page() {
+function Home_page({ navigate }) {
     return (
         <>
             <Header />
-            <HeroSelection />
+            <HeroSelection navigate={navigate} />
             <Highlights />
             <Testimonials />
             <About />

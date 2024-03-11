@@ -1,16 +1,13 @@
 import React, { useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
 import { createRoot } from "react-dom/client";
 import { useFormik } from "formik";
 import * as Yup from 'yup';
-import { FormControl, FormErrorMessage, Input, Select, Textarea } from "@chakra-ui/react";
+import { FormLabel, FormControl, FormErrorMessage, Input, Select, Textarea } from "@chakra-ui/react";
 import reserve_photo_1 from "../images/reserve_photo_1.jpg"
 import reserve_photo_2 from "../images/reserve_photo_2.jpg"
 import "./Reserve_section.css"
 
-function Reserve_section() {
-    const navigate = useNavigate();
-
+function Reserve_section({ navigate }) {
     const formik = useFormik({
         initialValues: {
             guests: "",
@@ -63,6 +60,7 @@ function Reserve_section() {
         document.getElementById("res_date").className += " pressed";
     }
 
+    const dep_arr = [!formik.touched.guests, !formik.touched.date, !formik.touched.time, !formik.touched.location]
     useEffect(() => {
         if (formik.touched.guests) {
             document.getElementById("res_guests").className += " error_border";
@@ -76,7 +74,7 @@ function Reserve_section() {
         if (formik.touched.location) {
             document.getElementById("res_loc").className += " error_border";
         }
-    }, [!formik.touched.guests, !formik.touched.date, !formik.touched.time, !formik.touched.location]);
+    }, [dep_arr]);
 
     return (
         <section>
@@ -84,7 +82,7 @@ function Reserve_section() {
                 <form onSubmit={formik.handleSubmit} className="reserve" id="reserve_div">
                     <div>
                         <div id="res_guests" className="select_block lead_text">
-                            <h2>Number of guests</h2>
+                            <FormLabel htmlFor="guests">Number of guests</FormLabel>
                             <div className="data">
                                 <FormControl>
                                     <Select
@@ -103,7 +101,7 @@ function Reserve_section() {
                             </div>
                         </div>
                         <div id="res_date" className="select_block lead_text">
-                            <h2>Date of reservation</h2>
+                            <FormLabel htmlFor="date">Date of reservation</FormLabel>
                             <FormControl className="sub_title data" onChange={date_pressed}>
                                 <Input
                                     type="date"
@@ -114,7 +112,7 @@ function Reserve_section() {
                             </FormControl>
                         </div>
                         <div id="res_time" className="select_block lead_text">
-                            <h2>Time of reservation</h2>
+                            <FormLabel htmlFor="time">Time of reservation</FormLabel>
                             <div className="data">
                                 <FormControl>
                                     <Select
@@ -133,7 +131,7 @@ function Reserve_section() {
                             </div>
                         </div>
                         <div id="res_loc" className="select_block lead_text">
-                            <h2>Table location</h2>
+                            <FormLabel htmlFor="location">Table location</FormLabel>
                             <div className="data">
                                 <FormControl>
                                     <Select
@@ -196,7 +194,7 @@ function Reserve_section() {
                     </div>
                     <div className="buttons">
                         <button className="button lead_text b1" onClick={() => { navigate("/") }}>Back</button>
-                        <button id="sum" type="submit" className="button lead_text b2" >Reserve</button>
+                        <button type="submit" className="button lead_text b2">Reserve</button>
                     </div>
                 </form>
                 <div className="image_stack_2">
